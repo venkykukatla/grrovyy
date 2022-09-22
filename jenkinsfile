@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean install -f /var/lib/jenkins/workspace/tomcat/pom.xml'
+                sh 'mvn clean install -f /var/lib/jenkins/workspace/pipeline/pom.xml'
             }
         }
         stage('Tomcat') {
