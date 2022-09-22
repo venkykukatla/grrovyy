@@ -18,7 +18,7 @@ pipeline {
         stage('Tomcat') {
             steps {
                 sshagent(['ssh-agent']) {
-                 sh "scp -o StrictHostKeyChecking=no target/hello-2.0.war ubuntu@3.17.174.116:/opt/tomcat/apache-tomcat-8.5.82/webapps"
+                 sh "scp -o StrictHostKeyChecking=no target/hello-4.0.war ubuntu@3.17.174.116:/opt/tomcat/apache-tomcat-8.5.82/webapps"
 } 
             }    
         }
